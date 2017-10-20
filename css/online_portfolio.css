@@ -131,7 +131,7 @@ header .hero h1 {
 }
 .socialmediaicons ul li {
   display: inline-block;
-  margin: 250px 0 0 10px;
+  margin: 200px 0 0 10px;
 }
 .socialmediaicons ul li img {
   width: 35px;
@@ -238,10 +238,10 @@ legend {
 
 nav {
   background-color: rgba(0,0,0,.65);
-  position: absolute;
+  position: none;
   top: 0px; left: 0px;
   padding: 0;
-  width: 100%;
+  max-width: 1200px;
 }
 nav::after {
   content:'';
