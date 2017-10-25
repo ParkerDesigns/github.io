@@ -27,6 +27,7 @@ $date = $_REQUEST['date'] ;
 $option = $_REQUEST['option'] ;
 $other = $_REQUEST['other'] ;
 $comments = $_REQUEST['comments'] ;
+$options = $_REQUEST['options'] ;
 
 /*
 The following function checks for email injection.
