@@ -17,17 +17,17 @@ $thankyou_page = "validform.html";
 This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
-$contact_name = $_GET['contact_name'] ;
-$email_address = $_GET['email_address'] ;
-$phone_number = $_GET['phone_number'] ;
-$location = $_GET['location'] ;
-$design = $_GET['design'] ;
-$skill = $_GET['skill'] ;
-$date = $_GET['date'] ;
-$option = $_GET['option'] ;
-$other = $_GET['other'] ;
-$comments = $_GET['comments'] ;
-$options = $_GET['options'] ;
+$contact_name = $_POST['contact_name'] ;
+$email_address = $_POST['email_address'] ;
+$phone_number = $_POST['phone_number'] ;
+$location = $_POST['location'] ;
+$design = $_POST['design'] ;
+$skill = $_POST['skill'] ;
+$date = $_POST['date'] ;
+$option = $_POST['option'] ;
+$other = $_POST['other'] ;
+$comments = $_POST['comments'] ;
+$options = $_POST['options'] ;
 
 /*
 The following function checks for email injection.
@@ -53,7 +53,7 @@ function isInjected($str) {
 }
 
 // If the user tries to access this script directly, redirect them to the feedback form,
-if (!isset($_GET['email_address'])) {
+if (!isset($_POST'email_address'])) {
 header( "Location: $feedback_page" );
 }
 
