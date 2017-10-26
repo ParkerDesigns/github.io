@@ -3,7 +3,7 @@
 This first bit sets the email address that you want the form to be submitted to.
 You will need to change this value to a valid email address that you can access.
 */
-$webmaster_email = "designbyaparker@gmail.com";
+$webmaster_email = "32904116+ParkerDesigns@users.noreply.github.com ";
 
 /*
 This bit sets the URLs of the supporting pages.
@@ -17,17 +17,17 @@ $thankyou_page = "validform.html";
 This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
-$contact_name = $_REQUEST['contact_name'] ;
-$email_address = $_REQUEST['email_address'] ;
-$phone_number = $_REQUEST['phone_number'] ;
-$location = $_REQUEST['location'] ;
-$design = $_REQUEST['design'] ;
-$skill = $_REQUEST['skill'] ;
-$date = $_REQUEST['date'] ;
-$option = $_REQUEST['option'] ;
-$other = $_REQUEST['other'] ;
-$comments = $_REQUEST['comments'] ;
-$options = $_REQUEST['options'] ;
+$contact_name = $_GET['contact_name'] ;
+$email_address = $_GET['email_address'] ;
+$phone_number = $_GET['phone_number'] ;
+$location = $_GET['location'] ;
+$design = $_GET['design'] ;
+$skill = $_GET['skill'] ;
+$date = $_GET['date'] ;
+$option = $_GET['option'] ;
+$other = $_GET['other'] ;
+$comments = $_GET['comments'] ;
+$options = $_GET['options'] ;
 
 /*
 The following function checks for email injection.
@@ -53,7 +53,7 @@ function isInjected($str) {
 }
 
 // If the user tries to access this script directly, redirect them to the feedback form,
-if (!isset($_REQUEST['email_address'])) {
+if (!isset($_GET['email_address'])) {
 header( "Location: $feedback_page" );
 }
 
