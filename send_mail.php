@@ -5,7 +5,7 @@
 This first bit sets the email address that you want the form to be submitted to.
 You will need to change this value to a valid email address that you can access.
 */
-$webmaster_email = "32904116+ParkerDesigns@users.noreply.github.com ";
+$webmaster_email = "32904116+ParkerDesigns@users.noreply.github.com";
 
 /*
 This bit sets the URLs of the supporting pages.
@@ -19,17 +19,17 @@ $thankyou_page = "validform.html";
 This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
-$contact_name = $_REQUEST['contact_name'] ;
-$email_address = $_REQUEST['email_address'] ;
-$phone_number = $_REQUEST['phone_number'] ;
-$location = $_REQUEST['location'] ;
-$design = $_REQUEST['design'] ;
-$skill = $_REQUEST['skill'] ;
-$date = $_REQUEST['date'] ;
-$option = $_REQUEST['option'] ;
-$other = $_REQUEST['other'] ;
-$comments = $_REQUEST['comments'] ;
-$options = $_REQUEST['options'] ;
+$contact_name = $_POST['contact_name'] ;
+$email_address = $_POST['email_address'] ;
+$phone_number = $_POST['phone_number'] ;
+$location = $_POST['location'] ;
+$design = $_POST['design'] ;
+$skill = $_POST['skill'] ;
+$date = $_POST['date'] ;
+$option = $_POST['option'] ;
+$other = $_POST['other'] ;
+$comments = $_POST['comments'] ;
+$options = $_POST['options'] ;
 
 /*
 The following function checks for email injection.
