@@ -1,8 +1,8 @@
 var socialMedia = {
   linkedin: 'https://www.linkedin.com/in/devin-parker-35729190',
   behance: 'https://www.behance.net/dparkeravs0295',
-  facebook: 'https://www.facebook.com/designbyaparker/',
-  twitter: 'https://twitter.com/DesignbyaParker',
+  facebook: 'https://www.facebook.com/designbyaparker',
+  twitter: 'https://www.twitter.com/DesignbyaParker',
   fiverr: 'https://www.fiverr.com/parker_designs'
 };
 
