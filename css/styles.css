@@ -343,6 +343,13 @@ footer a:visited {
 footer a:hover {
   color: #000;
 }
-
+@media screen and (max-width:650px) {
+	nav {
+		max-height: 52px;
+	}
+	nav ul {
+		padding-left: 0;
+	}
+}
 /* Form
 ------------------*/
